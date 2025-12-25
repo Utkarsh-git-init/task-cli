@@ -10,33 +10,50 @@ It allows users to manage tasks directly from the terminal and stores data in a 
 - Persistent storage using a JSON file
 - No external libraries or frameworks
 
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```
+   git clone https://github.com/Utkarsh-git-init/task-cli
+   cd task-cli
+   cd src
+2. **Compile the source code:**
+    ```
+   javac *.java
+3. **Run the application:**
+    ```
+   java TaskCLI <command> [arguments]
+   ```
+- json file will be created in src folder 
 ## Usage
 ````
 # Adding a new task
-task-cli add "Buy groceries"
+java TaskCLI add "Buy groceries"
 # Output: Task added successfully (ID: 1)
 
 # Updating a task
-task-cli update 1 "Buy groceries and cook dinner"
+java TaskCLI update 1 "Buy groceries and cook dinner"
 # Output: Task updated successfully (ID: 1)
 
 # Deleting a task
-task-cli delete 1
+java TaskCLI delete 1
 # Output: Task deleted successfully (ID: 1)
 
 # Marking a task as in progress
-task-cli mark-in-progress 1
+java TaskCLI mark-in-progress 1
 # Output: Task marked as in progress (ID: 1)
 
 # Marking a task as done
-task-cli mark-done 1
+java TaskCLI mark-done 1
 # Output: Task marked as done (ID: 1)
 
 # Listing all tasks
-task-cli list
+java TaskCLI list
 
 # Listing tasks by status
-task-cli list todo
-task-cli list in-progress
-task-cli list done
+java TaskCLI list todo
+java TaskCLI list in-progress
+java TaskCLI list done
 ````

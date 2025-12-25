@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class task_cli {
+public class TaskCLI {
     public static void main(String[] args) throws IOException {
         if(args.length==0){
             System.out.println("No command found");
