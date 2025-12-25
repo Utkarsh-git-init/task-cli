@@ -36,6 +36,7 @@ public class Update {
         if(task.charAt(task.length()-1)==',')
             updatedTask.append(',');
         json.set(itr,updatedTask.toString());
+        System.out.println("Task updated successfully (ID:"+id+")");
         Files.write(path,json);
     }
 }

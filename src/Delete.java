@@ -26,6 +26,7 @@ public class Delete {
                 break;
             }
         }
+        System.out.println("Task deleted successfully (ID:"+id+")");
         Files.write(path,json);
     }
 }

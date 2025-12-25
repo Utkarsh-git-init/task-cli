@@ -32,10 +32,14 @@ public class Mark {
             }
             updatedTask.append(task.charAt(i));
         }
-        if(status.equals("done"))
+        if(status.equals("done")){
             updatedTask.append(", \"status\":\"done\"");
-        else if(status.equals("in_progress"))
+            System.out.println("Task marked as done (ID:"+id+")");
+        }
+        else if(status.equals("in_progress")) {
             updatedTask.append(", \"status\":\"in-progress\"");
+            System.out.println("Task marked as in-progress (ID:"+id+")");
+        }
         for(int i=0,countOfComma=0;i<task.length();i++){
             if(task.charAt(i)==',')
                 countOfComma++;

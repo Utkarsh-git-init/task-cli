@@ -30,5 +30,6 @@ public class Add {
         String task="{\"id\":\""+id+"\", \"description\":\""+description+"\", \"status\":\"todo\""+", \"createdAt\":\""+ Instant.now()+"\", \"updatedAt\":\"null\"}";
         json.add(json.size()-1,task);
         Files.write(path,json);
+        System.out.println("Task added successfully (ID:"+id+")");
     }
 }
