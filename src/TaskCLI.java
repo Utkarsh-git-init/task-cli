@@ -38,6 +38,8 @@ public class TaskCLI {
             case "mark-done":
                 Mark.mark(args[1],path,"done");
                 break;
+            default:
+                System.out.println("Invalid Command");
         }
     }
 }
