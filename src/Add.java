@@ -25,8 +25,8 @@ public class Add {
             lastTask+=",";
             json.remove(json.size()-2);
             json.add(json.size()-1,lastTask);
+            id++;
         }
-        id++;
         String task="{\"id\":\""+id+"\", \"description\":\""+description+"\", \"status\":\"todo\""+", \"createdAt\":\""+ Instant.now()+"\", \"updatedAt\":\"null\"}";
         json.add(json.size()-1,task);
         Files.write(path,json);
